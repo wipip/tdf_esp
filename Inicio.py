@@ -7,7 +7,7 @@ from nltk.stem import SnowballStemmer
 
 st.set_page_config(
     page_title="TF_IDF_español",
-    page_icon="🇨🇴",
+    page_icon=🏴‍☠️",
     layout="wide"
 )
 
