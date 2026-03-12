@@ -5,15 +5,20 @@ import pandas as pd
 import re
 from nltk.stem import SnowballStemmer
 
+st.set_page_config(
+    page_title="TF_IDF_español",
+    page_icon="🇨🇴",
+    layout="wide"
+)
+
 st.title("🔍 Demo TF-IDF en Español")
 
 # Documentos de ejemplo
-default_docs = """El perro ladra fuerte en el parque.
-El gato maúlla suavemente durante la noche.
-El perro y el gato juegan juntos en el jardín.
-Los niños corren y se divierten en el parque.
-La música suena muy alta en la fiesta.
-Los pájaros cantan hermosas melodías al amanecer."""
+default_docs = """Juanito camina
+juanito le gusta salir de noche
+juanito juega de noche
+juanito juega con su pelota en la noche
+juanito patea su pelota en la noche."""
 
 # Stemmer en español
 stemmer = SnowballStemmer("spanish")
